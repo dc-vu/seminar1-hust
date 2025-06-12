@@ -1,0 +1,611 @@
+% \documentclass[9pt, aspectratio=169]{beamer}
+\documentclass[9pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{tikz}
+\usepackage{caption}
+%\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{matlab}
+\sloppy
+% \usepackage{case}
+\usefonttheme[onlymath]{serif}
+\usetheme{Berkeley}
+\usecolortheme{default}
+\usepackage[export]{adjustbox}
+\usepackage{minted}
+
+
+% \usetheme{AnnArbor}
+% \usecolortheme{default}
+
+\usepackage{caption}
+\captionsetup{font=footnotesize}
+
+
+\AddToHook{shipout/foreground}{
+	\ifnum\thepage>1
+	\begin{tikzpicture}[overlay, remember picture]
+		\node[text=black, rotate=0, scale=1, opacity=0.1] at (current page.center) 
+		{\includegraphics[width=0.5\paperwidth]{logo.png}};
+	\end{tikzpicture}
+	\fi
+}
+
+
+\graphicspath{ {./images/} }
+%
+%		\begin{tikzpicture}[remember picture,overlay]
+%	% \node[fill=blue!30, text=white, font=\large, rounded corners] 
+%	\node at (current page.north east) [xshift=-4.5cm, yshift=-6.5cm] 
+%	{\includegraphics[width=0.7\linewidth]{img/simscape.png}};
+%\end{tikzpicture}
+
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[{\color{white}MuJoCo - Advanced Physics Simulation}]{MuJoCo for Advanced Physics Simulation: \\From manipulators to autonomous vehicles}
+
+% \subtitle{2D model}
+
+\author[D.C. Vu] % (optional) 
+{Duc Cuong Vu}
+
+\institute [MEG, MoCAR, HUST]
+{
+	Motion Control and Applied Robotics Laboratory\\
+	School of Electrical and Electronic Engineering,\\
+	Hanoi University of Science and Technology\\
+	Email: \href{mailto:vdcuong2002@gmail.com}{vdcuong2002@gmail.com} \\
+	Site: \href{https://dc-vu.github.io}{dc-vu.github.io}
+}
+
+\date{Version: 1.0\\ Last updated: \today}
+
+\logo{\includegraphics[height=0.8cm]{logo}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+% commands for the title and message of the "Thank you" page
+\def\thankstitle#1{\def\@thankstitle{#1}}
+\def\thanksmessage#1{\def\@thanksmessage{#1}}
+\thankstitle{Thanks for your attention! Any questions?}
+\thanksmessage{Hope you slept comfortably!}
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+	\fontsize{8}{13}\selectfont
+	%The next statement creates the title page.
+	\frame{\titlepage}
+	
+	
+	%---------------------------------------------------------
+	%This block of code is for the table of contents after
+	%the title page
+	\begin{frame}
+		\frametitle{Table of Contents}
+		\tableofcontents
+	\end{frame}
+	%---------------------------------------------------------
+	
+	\begin{frame}
+		\begin{itemize}
+			\item This seminar does not include mathematical equations.
+			\item Programming skills are not covered in this seminar.
+		\end{itemize}
+	\end{frame}
+	
+	
+	
+	% =========================================
+	% =========================================
+	\section{What is MuJoCo?}
+	% =========================================
+	% =========================================
+	
+	\begin{frame}
+		\frametitle{What is MuJoCo?}
+		``\textit{MuJoCo is a free and open source physics engine that aims to facilitate research and development in robotics, biomechanics, graphics and animation, and other areas where fast and accurate simulation is needed.}'' \footnote{\href{https://mujoco.org/}{https://mujoco.org/}}, \footnote{Todorov, E., Erez, T., \& Tassa, Y. (2012, October). Mujoco: A physics engine for model-based control. In 2012 IEEE/RSJ international conference on intelligent robots and systems (pp. 5026-5033). IEEE.}
+		
+		\begin{center}
+			\includegraphics[width=0.5\linewidth, fbox]{images/paper-mujoco}
+		\end{center}
+		
+		\begin{center}
+			\includegraphics[width=0.7\linewidth, , fbox]{images/github-mujoco}
+		\end{center}
+	
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Comparison}
+			Comparisons of Simscape, MuJoCo and IsaacSim from 2015
+			
+			\scalebox{0.63}{\input{tikz/compare.tex}}
+			
+			IssacSim is the trend, but ...
+	\end{frame}
+
+
+	\begin{frame}
+		\frametitle{Resources}
+		\scalebox{0.8}{\input{tikz/mjc-resource.tex}}
+	\end{frame}
+	
+	\begin{frame}[fragile]
+		\frametitle{Model description}
+		MuJoCo can load XML model files in its native MJCF format, as well as in the popular but more limited URDF format.
+	\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{XML}
+<mujoco>
+  <default class="main">
+    <geom rgba="1 0 0 1"/>
+    <default class="sub">
+      <geom rgba="0 1 0 1"/>
+    </default>
+  </default>
+	
+  <worldbody>
+    <geom type="box"/>
+    <body childclass="sub">
+      <geom type="ellipsoid"/>
+      <geom type="sphere" rgba="0 0 1 1"/>
+      <geom type="cylinder" class="main"/>
+    </body>
+  </worldbody>
+</mujoco>
+		
+	\end{minted}
+	\end{frame}
+	
+	\begin{frame}
+		\frametitle{Programming}
+		MuJoCo has a C API and is intended for researchers and developers. The runtime simulation module is tuned to maximize performance and operates on low-level data structures that are preallocated by the built-in XML compiler. 
+		
+		The Python bindings are distributed as the \texttt{mujoco} package on PyPI. These are low-level bindings that are meant to give as close to a direct access to the MuJoCo library as possible.
+		
+		\begin{center}
+			\includegraphics[width=0.7\linewidth]{images/gg-colab}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Learning}
+		The documents about MuJoCo could be found at
+		\footnote{\href{https://mujoco.readthedocs.io/en/stable/overview.html}{https://mujoco.readthedocs.io/en/stable/overview.html}}.
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{images/gg-mjc-overview}
+		\end{center}
+		
+	\end{frame}
+
+
+	
+	
+	% =========================================
+	% =========================================
+	\section{Configuration}
+	% =========================================
+	% =========================================
+	\begin{frame}[fragile]
+		\frametitle{Installation}
+		\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{XML}
+pip install mujoco
+		\end{minted}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Configuration}
+		\begin{figure}
+			\scalebox{0.6}{\input{tikz/mujoco-approach.tex}}
+		\end{figure}
+		
+		Process of replicating a real-world Stewart platform model into a MuJoCo simulation environment: Starting from the real-world model, the system is first designed in a computer-aided design (CAD) software (SolidWorks, Inventor). The CAD design is then translated into XML descriptions compatible with MuJoCo. Finally, the structured XML is used to construct the MuJoCo model with the actuators, sensors, ..., enabling high-fidelity physics-based simulation and control testing.	
+	\end{frame}
+	
+
+	
+	% =========================================
+	% =========================================
+	\section{Examples}
+	% =========================================
+	% =========================================
+		\subsection{7-DOF serial manipulator}
+		
+		\begin{frame}
+			\frametitle{7-DOF serial manipulator}
+			7-DOF serial manipulator simulation in MuJoCo, the open-source is available at \footnote{\href{https://github.com/dc-vu/mujoco_7DOFs_robot_arm_simulation.git}{https://github.com/dc-vu/mujoco\_7DOFs\_robot\_arm\_simulation.git}} (Contributor: Duc-Cuong Vu)
+			\begin{center}
+				\includegraphics[width=0.9\linewidth]{images/mjc-7dof}
+			\end{center}
+			
+		\end{frame}
+	
+	
+		\begin{frame}[fragile]
+			\frametitle{Robot definition}
+			Robot XML definition
+		\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{XML}
+<asset>
+  <mesh name="base_mesh" file="base.stl" scale="0.001 0.001 0.001"/>
+  <mesh name="motor110_mesh" file="motor110.stl" scale="0.001 0.001 0.001"/>
+  <mesh name="motor70_mesh" file="motor70.stl" scale="0.001 0.001 0.001"/>
+  <mesh name="link2_mesh" file="link2.stl" scale="0.001 0.001 0.001"/>
+  <mesh name="link3_mesh" file="link3.stl" scale="0.001 0.001 0.001"/>
+</asset>
+
+ 
+<!-- Link 1 -->
+  <body name="link1">
+    <joint name="joint1" type="hinge" axis="0 0 1"/>
+    <geom type="mesh" mesh="motor110_mesh"/>
+
+    <!-- Link 2 -->
+    <body name="link2"> 
+      <joint name="joint2" type="hinge" axis="0 0 1" />
+      <geom type="mesh" mesh="motor110_mesh"/>
+      
+      <!-- Robot tree-based definition => easy -->
+      
+<!-- Sensing -->
+<sensor>
+  <framepos name="ee_pos" objtype="body" objname="ee"/>
+  <framequat name="ee_quat" objtype="body" objname="ee"/>
+</sensor>
+		\end{minted}
+		\end{frame}
+	
+		\begin{frame}[fragile]
+			            
+			\frametitle{Inverse kinematics validation}
+					\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+ee_pos = data.body("ee").xpos
+eex, eey, eez = ee_pos
+ee_xmat_flat = data.body("ee").xmat
+ee_R = np.array(ee_xmat_flat).reshape(3, 3)
+ori = R.from_matrix(ee_R).as_euler('xyz')
+print(f"t={t:.3f} | x={eex:.3f} | y={eey:.3f} | z={eez:.3f} | "
+	f"roll={ori[0]:.3f} | pitch={ori[1]:.3f} | yaw={ori[2]:.3f}")
+# Inverse kinematics calculation here => do not straightforward
+for i in range(7):
+	data.joint(f"joint{i+1}").qpos = joint_demand[i] - angles_offset[i]
+			\end{minted}
+		
+			\begin{figure}
+				\scalebox{0.7}{\input{tikz/7dof.tex}}
+			\end{figure}
+
+		\end{frame}
+	
+	
+		\begin{frame}[fragile]
+			\frametitle{Remaining problems}
+			.\begin{itemize}
+				\item The inverse kinematics is not real-time, because an optimization problem is used for solving the joint states
+				\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+def levenberg_marquardt_ik_dh(q_init, desired_pose):
+  result = least_squares(
+  ik_loss, 	# the coss  function
+  q_init, 	# initial guess
+  args=(desired_pose,), 
+  method='trf',  # Change to 'lm' if you want to use Levenberg-Marquardt
+  ftol=1e-6,     # Tolerance for the cost function
+  xtol=1e-6,     # Tolerance for the solution
+  gtol=1e-6,     # Tolerance for the gradient
+  max_nfev=200  # Maximum number of function evaluations
+  )
+  return result.x, result.cost
+				\end{minted}
+				This function is implemented in Python, the solver is trust region method or Levenberg-Marquardt. Thus the real-time purpose is not guaranteed. This problem could be addressed by utilizing the C code in the remaining part of this talk.
+				\item Need actuators
+			\end{itemize}
+		\end{frame}
+	
+	
+		\subsection{6-DOF parallel mechanisms}
+			\begin{frame}
+				\frametitle{6-DOF parallel mechanisms - Stewart platform}
+				Stewart platform simulation in MuJoCo, the open-source is not available.
+				
+				(Contributors: Viet Khanh Nguyen, Duc Cuong Vu)
+				
+				\begin{center}
+					\includegraphics[width=0.9\linewidth]{mujoco-stewart}
+				\end{center}
+				
+			\end{frame}
+		
+		
+		
+			\begin{frame}[fragile]
+				\frametitle{Closed loop kinematics chain}
+				\begin{figure}
+					\scalebox{0.7}{\input{tikz/parallel-mechanisms.tex}}
+				\end{figure}
+			
+				The parallel mechanisms could be described in MuJoCo by equality attribute as follows
+				\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+<mujoco model="Parallel mechanisms equality">
+  <equality>
+    <weld name="w_1" site1="site1" site2="site2"></weld>
+    <weld name="w_2" site1="site2" site2="site4"></weld>
+  </equality>
+</mujoco>
+				\end{minted}
+			\end{frame}
+		
+		
+			
+			\begin{frame}[fragile]
+				\frametitle{Optimization-based kinematics - (ctypes in Python - C code for real-time implementation)}
+				The algorithm is introduced in \textit{2.2. Kinematics analysis} of the publication \footnote{Vu, D. C., Nguyen, T. L., \& Nguyen, D. H. (2025). A novel approach of Consensus-based Finite-time Distributed Sliding Mode Control for Stewart platform manipulators motion tracking. Results in Engineering, 25, 103872.}
+				\begin{center}
+					\includegraphics[width=1\linewidth]{images/vscode-fk-stewart}
+				\end{center}
+			\end{frame}
+		
+			\begin{frame}[fragile]
+				\frametitle{Dynamics control}
+				
+				Control purpose $\to$ \textbf{The upper platform track a reference}
+				
+				From the desired pose of the upper platform, by the inverse kinematics, the desired length of the actuators is calculated.
+				
+				In the aim of this seminar, a simple PID controller is design to control the length of the actuators. 
+				
+					\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+# Get data from sensors ...
+sensor_value = np.array([
+  data.sensor('leg1_len_sensor').data,
+  data.sensor("leg2_len_sensor").data,
+  ...
+  ]).reshape(-1) + self.legs_offset
+  
+# Define the controller (PID in this case) ...
+self.controller = StewartPlatformPIDController(Kp, Ki, Kd, self.time_step )
+ 
+# Apply the control signal to the model via data.ctrl
+data.ctrl = self.controller.solve(errors)
+					\end{minted}
+			\end{frame}
+		
+		
+			\begin{frame}[fragile]
+				\frametitle{Peripherals connection}
+			
+			Get pose of the joystick as the references values of the upper platform.
+				\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+import pygame
+pygame.init()
+pygame.joystick.init()
+
+roll = normalize_euler_workingspace(round_to_step(self.joystick.get_axis(0)))
+pitch = -normalize_euler_workingspace(round_to_step(self.joystick.get_axis(1)))
+yaw = -normalize_euler_workingspace(round_to_step(self.joystick.get_axis(5)))
+	
+z = normalize_pos_workingspace(round_to_step(self.joystick.get_axis(2)))
+y = normalize_pos_workingspace(round_to_step(self.joystick.get_axis(3)))
+x = normalize_pos_workingspace(round_to_step(self.joystick.get_axis(4)))			
+				\end{minted}
+				\scalebox{0.6}{\input{tikz/joystick.tex}}
+			\end{frame}
+		
+					\begin{frame}[fragile]
+			\frametitle{Peripherals connection}
+			The source code for this project is not publicly available.
+			
+			For access or further information, please contact Viet Khanh Nguyen or Duc Cuong Vu.
+				\begin{center}
+					\includegraphics[width=1\linewidth]{images/real-joystick-ctrl}
+				\end{center}
+				
+			\end{frame}
+		
+		\subsection{Unmanned Aerial Vehicle (UAV)}
+			\begin{frame}[fragile]
+				\frametitle{Skydio X2 model}
+				The model is available at \footnote{text\href{https://github.com/google-deepmind/mujoco_menagerie/blob/main/skydio_x2/x2.xml}{https://github.com/google-deepmind/mujoco\_menagerie/blob/main/skydio\_x2/x2.xml}}
+				\begin{center}
+					\includegraphics[width=1\linewidth]{images/mjc-x2}
+				\end{center}
+				
+			\end{frame}
+		
+			\begin{frame}[fragile]
+				\frametitle{Skydio X2 model}
+				The AUV is a standard model. Actuator allocation can be found in the \texttt{<actuator>} tag below.
+				
+				In addition, an IMU sensor is used in this model.
+					\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+<actuator>
+  <motor class="x2" name="thrust1" site="thrust1" gear="0 0 1 0 0 -.0201"/>
+  <motor class="x2" name="thrust2" site="thrust2" gear="0 0 1 0 0  .0201"/>
+  <motor class="x2" name="thrust3" site="thrust3" gear="0 0 1 0 0  .0201"/>
+  <motor class="x2" name="thrust4" site="thrust4" gear="0 0 1 0 0 -.0201"/>
+</actuator>
+
+<sensor>
+  <gyro name="body_gyro" site="imu"/>
+  <accelerometer name="body_linacc" site="imu"/>
+  <framequat name="body_quat" objtype="site" objname="imu"/>
+</sensor>
+				\end{minted}
+			\end{frame}
+		
+			\begin{frame}[fragile]
+				\frametitle{Peripherals connection for UAV control}
+				The source code for this project is not publicly available.
+				
+				For access or further information, please contact Viet Khanh Nguyen.
+				\begin{center}
+					\includegraphics[width=1\linewidth]{images/mjc-uav}
+				\end{center}
+			\end{frame}
+		
+		
+		
+		
+		
+		\subsection{Autonomous Underwater Vehicle (AUV)}
+		
+			\begin{frame}[fragile]
+				\frametitle{Omni-directional Intelligent Navigation model}
+				This repository presents a simulation framework for an Autonomous Underwater Vehicle (AUV) that combines Model Predictive Control (MPC), Control Barrier Functions (CBF) for robust path tracking and obstacle avoidance in dynamic underwater environments. The theories are shown in the publication \footnote{Pham, M. D., Vu, D. C., Nguyen, T. T. H., Nguyen, T. V. A., Vu, M. N., \& Nguyen, T. L. (2025). CBFs-based Model Predictive Control for Obstacle Avoidance with Tilt Angle Limitation for Ball-Balancing Robots. IEEE Access.}
+				
+				\begin{center}
+					\includegraphics[width=0.5\linewidth]{images/mjc-odin}
+				\end{center}
+				The source code for this project is not publicly available.
+				
+				For access or further information, please contact Duc Cuong Vu.
+			\end{frame}
+		
+		
+		\begin{frame}[fragile]
+			\frametitle{ODIN actuators}
+			The ODIN is driven by 8 thruster, it could be defined as follows
+				\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{xml}
+<actuator>
+  <general name = "thruster1" site="thruster1_site" gear="0 0 1 0 0 0"/>
+  <general name = "thruster2" site="thruster2_site" gear="0 0 1 0 0 0" />
+  <general name = "thruster3" site="thruster3_site" gear="0 0 1 0 0 0" />
+  <general name = "thruster4" site="thruster4_site" gear="0 0 1 0 0 0" />
+  <general name = "thruster5" site="thruster5_site" gear="0 0 1 0 0 0" />
+  <general name = "thruster6" site="thruster6_site" gear="0 0 1 0 0 0" />
+  <general name = "thruster7" site="thruster7_site" gear="0 0 1 0 0 0" />
+  <general name = "thruster8" site="thruster8_site" gear="0 0 1 0 0 0" />
+</actuator>	
+			\end{minted}
+		and the general force and moment of underwater environment
+			\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{xml}
+<actuator>
+  <general name="Force_X" site="odin_site" gear="1 0 0 0 0 0"/>
+  <general name="Force_Y" site="odin_site" gear="0 1 0 0 0 0"/>
+  <general name="Force_Z" site="odin_site" gear="0 0 1 0 0 0"/>
+  <general name="Moment_K" site="odin_site" gear="0 0 0 1 0 0"/>
+  <general name="Moment_M" site="odin_site" gear="0 0 0 0 1 0"/>
+  <general name="Moment_N" site="odin_site" gear="0 0 0 0 0 1"/>
+</actuator>
+		\end{minted}
+
+			
+		\end{frame}
+			
+			
+			
+			    
+			
+			\begin{frame}[fragile]
+				\frametitle{Optimization-based decision-making}
+				Following the SNAME(1950) notation, a general underwater vehicle could be controlled by consider the control input as the forces and moments at the origin. Thus, the force allocation for thruster could be achieved by an energy-optimization decision.
+				\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+from scipy.optimize import minimize, Bounds
+					
+def objective(x):  # Objective: minimize x^T x
+	return np.dot(x, x)		
+	
+def eq_constraint(x):  # Equality constraint: E x = A
+	return force_allocation(x) - FandM 		
+
+bounds = Bounds([0, 0, 0, 0, -np.inf, -np.inf, -np.inf, -np.inf], [np.inf]*8)
+linear_constraint = {'type': 'eq', 'fun': eq_constraint}
+
+x0 = thurster_prev   # Initial guess
+
+result = minimize(objective, x0, method='SLSQP',
+  constraints=[linear_constraint],
+  bounds=bounds)
+				\end{minted}
+			\end{frame}
+		
+		\begin{frame}[fragile]
+			\frametitle{Model Predictive Control with CasADi}
+			\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+import casadi as ca
+for j in range(N):
+  # Apply dynamics to get next state
+  x_next = rk4_step(x[:, j], u[:, j], dtc)
+  opti.subject_to(x[:, j+1] == x_next)  # Dynamics constraint
+
+  # Tracking error: difference between current position and reference
+  e = x[0:3, j] - QR[:, j]
+  # Add to cost (only position error considered)
+  cost += ca.mtimes([e.T, Q, e])
+  # Note: control effort term (u.T * R * u) can be added here
+
+  dist = obs_detected * ((x_next[0] - x_obs)**2 + 
+    (x_next[1] - y_obs)**2 + (x_next[2] - z_obs)**2 - r_obs**2)
+
+  # Update obstacle position based on velocity
+  x_obs += current_vel[0]*dtc
+  y_obs += current_vel[1]*dtc
+  z_obs += current_vel[2]*dtc
+
+  # Change in distance between time steps
+  diff_dist = dist - dist_before
+  dist_before = dist  # Update for next step
+
+  # CBF constraint to ensure distance grows fast enough
+  opti.subject_to(diff_dist >= -gamma*dist)
+			\end{minted}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Model Predictive Control with CasADi}
+			\begin{center}
+				\includegraphics[width=0.9\linewidth, fbox]{images/mjc-odin1m.png}
+				\includegraphics[width=0.9\linewidth, fbox]{images/mjc-odin3.png}
+			\end{center}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Model Predictive Control with CasADi}
+			\begin{center}
+				\includegraphics[width=0.9\linewidth, fbox]{images/mjc-odin2.png}
+			\end{center}
+		\end{frame}
+	
+		\begin{frame}
+			\frametitle{Model Predictive Control with CasADi}
+			\begin{center}
+				\includegraphics[width=0.9\linewidth, fbox]{images/mjc-odin4.png}
+			\end{center}
+		\end{frame}
+	
+	
+	% =========================================
+	% =========================================
+	\section{Q\&A}
+	% =========================================
+	% =========================================
+
+
+	
+	% =========================================
+	% =========================================
+
+	
+
+	
+	\begin{frame}{Thanks for your attention! Any questions?}%% 1
+		\begin{center}
+			\Huge Hope you slept comfortably!
+		\end{center}
+	\end{frame}
+	
+\end{document}

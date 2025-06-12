@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}asset\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}mesh}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}base\PYGZus{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{file=}\PYG{l+s}{\PYGZdq{}base.stl\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{scale=}\PYG{l+s}{\PYGZdq{}0.001 0.001 0.001\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}mesh}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}motor110\PYGZus{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{file=}\PYG{l+s}{\PYGZdq{}motor110.stl\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{scale=}\PYG{l+s}{\PYGZdq{}0.001 0.001 0.001\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}mesh}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}motor70\PYGZus{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{file=}\PYG{l+s}{\PYGZdq{}motor70.stl\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{scale=}\PYG{l+s}{\PYGZdq{}0.001 0.001 0.001\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}mesh}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}link2\PYGZus{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{file=}\PYG{l+s}{\PYGZdq{}link2.stl\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{scale=}\PYG{l+s}{\PYGZdq{}0.001 0.001 0.001\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}mesh}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}link3\PYGZus{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{file=}\PYG{l+s}{\PYGZdq{}link3.stl\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{scale=}\PYG{l+s}{\PYGZdq{}0.001 0.001 0.001\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/asset\PYGZgt{}}
+
+
+\PYG{c+cm}{\PYGZlt{}!\PYGZhy{}\PYGZhy{} Link 1 \PYGZhy{}\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}body}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}link1\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}joint}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}joint1\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}hinge\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{axis=}\PYG{l+s}{\PYGZdq{}0 0 1\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{mesh=}\PYG{l+s}{\PYGZdq{}motor110\PYGZus{}mesh\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+
+\PYG{+w}{    }\PYG{c+cm}{\PYGZlt{}!\PYGZhy{}\PYGZhy{} Link 2 \PYGZhy{}\PYGZhy{}\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}body}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}link2\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{      }\PYG{n+nt}{\PYGZlt{}joint}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}joint2\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}hinge\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{axis=}\PYG{l+s}{\PYGZdq{}0 0 1\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{      }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}mesh\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{mesh=}\PYG{l+s}{\PYGZdq{}motor110\PYGZus{}mesh\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+
+\PYG{+w}{      }\PYG{c+cm}{\PYGZlt{}!\PYGZhy{}\PYGZhy{} Robot tree\PYGZhy{}based definition =\PYGZgt{} easy \PYGZhy{}\PYGZhy{}\PYGZgt{}}
+
+\PYG{c+cm}{\PYGZlt{}!\PYGZhy{}\PYGZhy{} Sensing \PYGZhy{}\PYGZhy{}\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}sensor\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}framepos}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}ee\PYGZus{}pos\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{objtype=}\PYG{l+s}{\PYGZdq{}body\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{objname=}\PYG{l+s}{\PYGZdq{}ee\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}framequat}\PYG{+w}{ }\PYG{n+na}{name=}\PYG{l+s}{\PYGZdq{}ee\PYGZus{}quat\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{objtype=}\PYG{l+s}{\PYGZdq{}body\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{objname=}\PYG{l+s}{\PYGZdq{}ee\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/sensor\PYGZgt{}}
+\end{Verbatim}

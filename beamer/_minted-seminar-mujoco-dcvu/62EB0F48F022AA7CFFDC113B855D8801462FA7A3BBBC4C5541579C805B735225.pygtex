@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}mujoco\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}default}\PYG{+w}{ }\PYG{n+na}{class=}\PYG{l+s}{\PYGZdq{}main\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{rgba=}\PYG{l+s}{\PYGZdq{}1 0 0 1\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}default}\PYG{+w}{ }\PYG{n+na}{class=}\PYG{l+s}{\PYGZdq{}sub\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{      }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{rgba=}\PYG{l+s}{\PYGZdq{}0 1 0 1\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/default\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}/default\PYGZgt{}}
+\PYG{+w}{	}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}worldbody\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}box\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}body}\PYG{+w}{ }\PYG{n+na}{childclass=}\PYG{l+s}{\PYGZdq{}sub\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+\PYG{+w}{      }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}ellipsoid\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{      }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}sphere\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{rgba=}\PYG{l+s}{\PYGZdq{}0 0 1 1\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{      }\PYG{n+nt}{\PYGZlt{}geom}\PYG{+w}{ }\PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}cylinder\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{class=}\PYG{l+s}{\PYGZdq{}main\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{    }\PYG{n+nt}{\PYGZlt{}/body\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}/worldbody\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/mujoco\PYGZgt{}}
+\PYG{+w}{		}
+\end{Verbatim}

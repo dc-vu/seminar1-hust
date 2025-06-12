@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Get data from sensors ...}
+\PYG{n}{sensor\PYGZus{}value} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}
+  \PYG{n}{data}\PYG{o}{.}\PYG{n}{sensor}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}leg1\PYGZus{}len\PYGZus{}sensor\PYGZsq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{data}\PYG{p}{,}
+  \PYG{n}{data}\PYG{o}{.}\PYG{n}{sensor}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}leg2\PYGZus{}len\PYGZus{}sensor\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{data}\PYG{p}{,}
+  \PYG{o}{...}
+  \PYG{p}{])}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{+} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{legs\PYGZus{}offset}
+
+\PYG{c+c1}{\PYGZsh{} Define the controller (PID in this case) ...}
+\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{controller} \PYG{o}{=} \PYG{n}{StewartPlatformPIDController}\PYG{p}{(}\PYG{n}{Kp}\PYG{p}{,} \PYG{n}{Ki}\PYG{p}{,} \PYG{n}{Kd}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{time\PYGZus{}step} \PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Apply the control signal to the model via data.ctrl}
+\PYG{n}{data}\PYG{o}{.}\PYG{n}{ctrl} \PYG{o}{=} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{controller}\PYG{o}{.}\PYG{n}{solve}\PYG{p}{(}\PYG{n}{errors}\PYG{p}{)}
+\end{Verbatim}

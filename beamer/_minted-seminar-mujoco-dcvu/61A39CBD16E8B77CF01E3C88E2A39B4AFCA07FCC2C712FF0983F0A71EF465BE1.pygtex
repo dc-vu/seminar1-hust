@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}actuator\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster1\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster1\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster2\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster2\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster3\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster3\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster4\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster4\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster5\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster5\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster6\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster6\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster7\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster7\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nt}{\PYGZlt{}general}\PYG{+w}{ }\PYG{n+na}{name =}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}thruster8\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{site=}\PYG{l+s}{\PYGZdq{}thruster8\PYGZus{}site\PYGZdq{}}\PYG{+w}{ }\PYG{n+na}{gear=}\PYG{l+s}{\PYGZdq{}0 0 1 0 0 0\PYGZdq{}}\PYG{+w}{ }\PYG{n+nt}{/\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/actuator\PYGZgt{}}\PYG{+w}{	}
+\end{Verbatim}

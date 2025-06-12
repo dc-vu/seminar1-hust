@@ -1,0 +1,29 @@
+\frametitle{Model Predictive Control with CasADi}
+			\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{python}
+import casadi as ca
+for j in range(N):
+  # Apply dynamics to get next state
+  x_next = rk4_step(x[:, j], u[:, j], dtc)
+  opti.subject_to(x[:, j+1] == x_next)  # Dynamics constraint
+
+  # Tracking error: difference between current position and reference
+  e = x[0:3, j] - QR[:, j]
+  # Add to cost (only position error considered)
+  cost += ca.mtimes([e.T, Q, e])
+  # Note: control effort term (u.T * R * u) can be added here
+
+  dist = obs_detected * ((x_next[0] - x_obs)**2 +
+    (x_next[1] - y_obs)**2 + (x_next[2] - z_obs)**2 - r_obs**2)
+
+  # Update obstacle position based on velocity
+  x_obs += current_vel[0]*dtc
+  y_obs += current_vel[1]*dtc
+  z_obs += current_vel[2]*dtc
+
+  # Change in distance between time steps
+  diff_dist = dist - dist_before
+  dist_before = dist  # Update for next step
+
+  # CBF constraint to ensure distance grows fast enough
+  opti.subject_to(diff_dist >= -gamma*dist)
+			\end{minted}

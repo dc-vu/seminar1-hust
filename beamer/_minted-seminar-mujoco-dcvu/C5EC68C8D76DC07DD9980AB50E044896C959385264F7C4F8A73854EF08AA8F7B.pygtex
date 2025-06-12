@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{ee\PYGZus{}pos} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{body}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ee\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{xpos}
+\PYG{n}{eex}\PYG{p}{,} \PYG{n}{eey}\PYG{p}{,} \PYG{n}{eez} \PYG{o}{=} \PYG{n}{ee\PYGZus{}pos}
+\PYG{n}{ee\PYGZus{}xmat\PYGZus{}flat} \PYG{o}{=} \PYG{n}{data}\PYG{o}{.}\PYG{n}{body}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}ee\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{xmat}
+\PYG{n}{ee\PYGZus{}R} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{(}\PYG{n}{ee\PYGZus{}xmat\PYGZus{}flat}\PYG{p}{)}\PYG{o}{.}\PYG{n}{reshape}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{)}
+\PYG{n}{ori} \PYG{o}{=} \PYG{n}{R}\PYG{o}{.}\PYG{n}{from\PYGZus{}matrix}\PYG{p}{(}\PYG{n}{ee\PYGZus{}R}\PYG{p}{)}\PYG{o}{.}\PYG{n}{as\PYGZus{}euler}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}xyz\PYGZsq{}}\PYG{p}{)}
+\PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}t=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{t}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | x=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{eex}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | y=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{eey}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | z=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{eez}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | \PYGZdq{}}
+	\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}roll=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{ori}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | pitch=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{ori}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{ | yaw=}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{ori}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]}\PYG{l+s+si}{:}\PYG{l+s+s2}{.3f}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Inverse kinematics calculation here =\PYGZgt{} do not straightforward}
+\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{p}{):}
+	\PYG{n}{data}\PYG{o}{.}\PYG{n}{joint}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s2}{\PYGZdq{}joint}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{i}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{qpos} \PYG{o}{=} \PYG{n}{joint\PYGZus{}demand}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{n}{angles\PYGZus{}offset}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}
+\end{Verbatim}

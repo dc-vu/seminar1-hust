@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{pygame}
+\PYG{n}{pygame}\PYG{o}{.}\PYG{n}{init}\PYG{p}{()}
+\PYG{n}{pygame}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{init}\PYG{p}{()}
+
+\PYG{n}{roll} \PYG{o}{=} \PYG{n}{normalize\PYGZus{}euler\PYGZus{}workingspace}\PYG{p}{(}\PYG{n}{round\PYGZus{}to\PYGZus{}step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{get\PYGZus{}axis}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)))}
+\PYG{n}{pitch} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{normalize\PYGZus{}euler\PYGZus{}workingspace}\PYG{p}{(}\PYG{n}{round\PYGZus{}to\PYGZus{}step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{get\PYGZus{}axis}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)))}
+\PYG{n}{yaw} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{n}{normalize\PYGZus{}euler\PYGZus{}workingspace}\PYG{p}{(}\PYG{n}{round\PYGZus{}to\PYGZus{}step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{get\PYGZus{}axis}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{)))}
+	
+\PYG{n}{z} \PYG{o}{=} \PYG{n}{normalize\PYGZus{}pos\PYGZus{}workingspace}\PYG{p}{(}\PYG{n}{round\PYGZus{}to\PYGZus{}step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{get\PYGZus{}axis}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)))}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{normalize\PYGZus{}pos\PYGZus{}workingspace}\PYG{p}{(}\PYG{n}{round\PYGZus{}to\PYGZus{}step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{get\PYGZus{}axis}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{)))}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{normalize\PYGZus{}pos\PYGZus{}workingspace}\PYG{p}{(}\PYG{n}{round\PYGZus{}to\PYGZus{}step}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{joystick}\PYG{o}{.}\PYG{n}{get\PYGZus{}axis}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{)))}			
+\end{Verbatim}

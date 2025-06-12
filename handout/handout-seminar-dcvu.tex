@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[left=0.3in, right=0.3in, top=0.5in, bottom=0.3in]{geometry}
+\usepackage{mathptmx}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable, listings}
+\tcbuselibrary{breakable} % allows breaking across pages
+
+\newtcolorbox{gradientbox}[2][]{
+	enhanced,
+	breakable,
+	colback=blue!5!white!90!gray,
+	colframe=blue!80!black,
+	fonttitle=\bfseries,
+	coltitle=black,
+	title=#2,
+	fonttitle=\fontfamily{lmss}\fontsize{12pt}{10pt}\bfseries,
+	boxed title style={
+		top color=cyan!60!black,
+		bottom color=blue!80!black,
+		sharp corners=north,
+	},
+	colbacktitle=blue!20!white,
+	colbacklower=white,
+	boxrule=1pt,
+	arc=6pt,
+	outer arc=6pt,
+	drop shadow,
+	#1
+}
+
+\usepackage{enumitem}
+
+
+\begin{document}
+	\pagestyle{empty}
+	
+	\fontsize{20pt}{30pt}\selectfont
+	\begin{center}
+		\textbf{MuJoCo for Advanced Physics Simulation: \\From manipulators to autonomous vehicles}
+	\end{center}
+	
+	\fontsize{12pt}{18pt}\selectfont
+	
+	\begin{gradientbox}{Sumarize}
+		As robotic systems become \textit{more complex} and \textit{operate in increasingly dynamic environments}, the need for high-performance physics simulation has grown rapidly. \textbf{\textit{MuJoCo (Multi-Joint dynamics with Contact)}} has emerged as a powerful and flexible simulation engine, offering accurate modeling of multi-body dynamics and \textit{efficient handling of contact and constraints}. Its \textit{lightweight design} and \textit{real-time capability} make it well-suited for both academic research and real-world robotic applications.\\
+		
+		In this seminar, we will introduce the \textbf{\textit{MuJoCo simulation framework}} and present a comparative discussion of its \textit{advantages} and \textit{limitations} relative to traditional platforms \textit{like MATLAB Simulink and Simscape}. The talk will include live demonstrations of \textbf{\textit{several robotic systems}} currently being developed within our research group, including:
+		\begin{itemize}[itemsep=-5pt, topsep=0pt]
+			\item {\textit{Serial manipulators with 7 degrees of freedom}}
+			\item {\textit{Parallel mechanisms such as Stewart platform}}
+			\item {\textit{Autonomous mobile robots in 3D environments}} (including underwater and aerial vehicles)
+		\end{itemize}
+		\vspace{0.3cm}
+		Beyond modeling and simulation, the seminar will also highlight ongoing efforts to \textbf{\textit{integrate control algorithms}} focused on \underline{system stabilization}, \underline{real-time implementation}, \underline{motion planning}, and \underline{optimization-based decision-making}. This session is intended for students and researchers interested in advanced simulation tools and their applications in modern robotics.
+		%\end{tcolorbox}
+	\end{gradientbox}
+	
+	\begin{gradientbox}{Seminar agenda}
+		\begin{enumerate}[itemsep=1pt]
+			\item Overview and introduction
+			\item Overview of MuJoCo and comparison with traditional simulator
+			\item Demonstration of Robotic systems
+			\begin{enumerate}[topsep=-1pt]
+				\item Serial manipulator (7-DOF): Model overview and kinematics implementation.
+				\item Parallel mechanism (6-DOF Stewart platform): Mechanisms constraints and stability control
+				\item Autonomous robots (AUV and UAV): Dynamic 3D environment, motion planning, optimization and real-time control concepts.
+			\end{enumerate}
+			\item Open Q\&A and Discussion.
+		\end{enumerate}
+		\textbf{Duration:} \textit{90 minutes}. \textit{xx/06/2025}
+	\end{gradientbox}
+
+
+	\begin{gradientbox}{Presenter}
+		\textbf{Duc-Cuong Vu}\\
+		Email: \href{mailto:vdcuong2002@gmail.com}{vdcuong2002@gmail.com} \\
+		Site: \href{https://dc-vu.github.io}{dc-vu.github.io}
+	\end{gradientbox}
+	
+	
+\end{document}

@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def}\PYG{+w}{ }\PYG{n+nf}{levenberg\PYGZus{}marquardt\PYGZus{}ik\PYGZus{}dh}\PYG{p}{(}\PYG{n}{q\PYGZus{}init}\PYG{p}{,} \PYG{n}{desired\PYGZus{}pose}\PYG{p}{):}
+  \PYG{n}{result} \PYG{o}{=} \PYG{n}{least\PYGZus{}squares}\PYG{p}{(}
+  \PYG{n}{ik\PYGZus{}loss}\PYG{p}{,} 	\PYG{c+c1}{\PYGZsh{} the coss  function}
+  \PYG{n}{q\PYGZus{}init}\PYG{p}{,} 	\PYG{c+c1}{\PYGZsh{} initial guess}
+  \PYG{n}{args}\PYG{o}{=}\PYG{p}{(}\PYG{n}{desired\PYGZus{}pose}\PYG{p}{,),}
+  \PYG{n}{method}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}trf\PYGZsq{}}\PYG{p}{,}  \PYG{c+c1}{\PYGZsh{} Change to \PYGZsq{}lm\PYGZsq{} if you want to use Levenberg\PYGZhy{}Marquardt}
+  \PYG{n}{ftol}\PYG{o}{=}\PYG{l+m+mf}{1e\PYGZhy{}6}\PYG{p}{,}     \PYG{c+c1}{\PYGZsh{} Tolerance for the cost function}
+  \PYG{n}{xtol}\PYG{o}{=}\PYG{l+m+mf}{1e\PYGZhy{}6}\PYG{p}{,}     \PYG{c+c1}{\PYGZsh{} Tolerance for the solution}
+  \PYG{n}{gtol}\PYG{o}{=}\PYG{l+m+mf}{1e\PYGZhy{}6}\PYG{p}{,}     \PYG{c+c1}{\PYGZsh{} Tolerance for the gradient}
+  \PYG{n}{max\PYGZus{}nfev}\PYG{o}{=}\PYG{l+m+mi}{200}  \PYG{c+c1}{\PYGZsh{} Maximum number of function evaluations}
+  \PYG{p}{)}
+  \PYG{k}{return} \PYG{n}{result}\PYG{o}{.}\PYG{n}{x}\PYG{p}{,} \PYG{n}{result}\PYG{o}{.}\PYG{n}{cost}
+\end{Verbatim}
