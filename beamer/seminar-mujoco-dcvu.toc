@@ -1,8 +1,8 @@
-\beamer@sectionintoc {1}{What is MuJoCo?}{4}{0}{1}
-\beamer@sectionintoc {2}{Configuration}{11}{0}{2}
-\beamer@sectionintoc {3}{Examples}{14}{0}{3}
-\beamer@subsectionintoc {3}{1}{7-DOF serial manipulator}{15}{0}{3}
-\beamer@subsectionintoc {3}{2}{6-DOF parallel mechanisms}{19}{0}{3}
-\beamer@subsectionintoc {3}{3}{Unmanned Aerial Vehicle (UAV)}{25}{0}{3}
-\beamer@subsectionintoc {3}{4}{Autonomous Underwater Vehicle (AUV)}{28}{0}{3}
-\beamer@sectionintoc {4}{Q\&A}{35}{0}{4}
+\beamer@sectionintoc {1}{What is MuJoCo?}{5}{0}{1}
+\beamer@sectionintoc {2}{Configuration}{13}{0}{2}
+\beamer@sectionintoc {3}{Examples}{17}{0}{3}
+\beamer@subsectionintoc {3}{1}{7-DOF serial manipulator}{18}{0}{3}
+\beamer@subsectionintoc {3}{2}{6-DOF parallel mechanisms}{22}{0}{3}
+\beamer@subsectionintoc {3}{3}{Unmanned Aerial Vehicle (UAV)}{28}{0}{3}
+\beamer@subsectionintoc {3}{4}{Autonomous Underwater Vehicle (AUV)}{31}{0}{3}
+\beamer@sectionintoc {4}{Q\&A}{38}{0}{4}

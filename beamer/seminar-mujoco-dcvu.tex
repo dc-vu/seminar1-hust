@@ -94,6 +94,33 @@
 	%The next statement creates the title page.
 	\frame{\titlepage}
 	
+\begin{frame}{Seminar on MuJoCo Simulation Framework}
+	
+	\textbf{Motivation:}
+	\begin{itemize}
+		\item High-performance physics simulation for complex, dynamic robotics.
+		\item \textbf{MuJoCo}: lightweight, real-time, accurate multi-body dynamics with efficient contact handling.
+	\end{itemize}
+	
+	\textbf{Seminar Highlights:}
+	\begin{itemize}
+		\item Introduction to MuJoCo and comparison with traditional simulators (e.g., MATLAB Simulink, Simscape).
+		\item Live demos of:
+		\begin{itemize}
+			\item 7-DOF Serial Manipulator (kinematics \& control)
+			\item Stewart Platform (constraint handling \& stabilization)
+			\item Autonomous 3D Robots (AUVs \& UAVs: motion planning, optimization, real-time control)
+		\end{itemize}
+	\end{itemize}
+	
+	\textbf{Control Topics:} System stabilization, real-time implementation, motion planning, optimization-based decision making.
+	
+	\vspace{0.3cm}
+	\textbf{Duration:} 90 minutes \hfill \textbf{Date:} xx/06/2025
+	
+\end{frame}
+
+	
 	
 	%---------------------------------------------------------
 	%This block of code is for the table of contents after
@@ -132,6 +159,18 @@
 		\end{center}
 	
 	\end{frame}
+	
+	\begin{frame}{Why MuJoCo?}
+		\begin{itemize}
+			\item Fast, accurate simulation for complex multi-body robotic systems.
+			\item Real-time capability for control and hardware-in-the-loop (HIL) testing.
+			\item Efficient contact, constraint, and sensor modeling.
+			\item Lightweight: easy integration with Python, C, or real hardware controllers.
+		\end{itemize}
+	\end{frame}
+	
+	
+	
 	
 	\begin{frame}
 		\frametitle{Comparison}
@@ -202,6 +241,20 @@
 	\section{Configuration}
 	% =========================================
 	% =========================================
+	
+	\begin{frame}
+		\frametitle{MATLAB Simscape multi-body traditional approach}
+		\begin{itemize}
+			\item First step, install the 50GB of MATLAB (include 20GB for installer and 30GB for unzip files.
+			\item Secondly, what if you don’t have the budget to purchase a license???
+			\item If you are a rich kid, in the next step, you spend 1 minute to 5 minutes for starting the MATLAB, and about more than one minutes for open the first Simulink windows.
+			\item Finally, designing is quite easy, but ..., compile time and simulation time are significant! If a block of Matlab Function is modified, MATLAB re-compiles the simulation.
+		\end{itemize}
+	\end{frame}
+
+
+
+
 	\begin{frame}[fragile]
 		\frametitle{Installation}
 		\begin{minted}[fontsize=\footnotesize, linenos, bgcolor=gray!10]{XML}
