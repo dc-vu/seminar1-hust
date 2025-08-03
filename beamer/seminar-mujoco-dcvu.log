@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.3)  15 JUN 2025 22:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.7.9)  3 AUG 2025 21:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1092,24 +1092,24 @@ runsystem(rm seminar-mujoco-dcvu.aex)...executed.
 (./seminar-mujoco-dcvu.aux)
 \openout1 = `seminar-mujoco-dcvu.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1167,7 +1167,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 92.
+Package hyperref Info: Link coloring ON on input line 93.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1180,9 +1180,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count389
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
 
 (./seminar-mujoco-dcvu.out) (./seminar-mujoco-dcvu.out)
 \@outlinefile=\write7
@@ -1220,7 +1220,7 @@ Package caption Info: End \AtBeginDocument code.
 <logo.png, id=45, 322.20375pt x 236.885pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 92.
+Package pdftex.def Info: logo.png  used on input line 93.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -1229,7 +1229,7 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 95.
+Package pdftex.def Info: logo.png  used on input line 96.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -1240,11 +1240,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 121.
+Package pdftex.def Info: logo.png  used on input line 122.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 121.
+Package pdftex.def Info: logo.png  used on input line 122.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [2
 
@@ -1255,11 +1255,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 131.
+Package pdftex.def Info: logo.png  used on input line 132.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 131.
+Package pdftex.def Info: logo.png  used on input line 132.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [3
 
@@ -1270,11 +1270,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 139.
+Package pdftex.def Info: logo.png  used on input line 140.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 139.
+Package pdftex.def Info: logo.png  used on input line 140.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [4
 
@@ -1285,35 +1285,35 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 145.
+Package pdftex.def Info: logo.png  used on input line 146.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 145.
+Package pdftex.def Info: logo.png  used on input line 146.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [5
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 161
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162
 .
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 161
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/paper-mujoco.png, id=252, 1099.10625pt x 290.58563pt>
+<images/paper-mujoco.png, id=253, 1099.10625pt x 290.58563pt>
 File: images/paper-mujoco.png Graphic file (type png)
 <use images/paper-mujoco.png>
-Package pdftex.def Info: images/paper-mujoco.png  used on input line 161.
+Package pdftex.def Info: images/paper-mujoco.png  used on input line 162.
 (pdftex.def)             Requested size: 151.6213pt x 40.08311pt.
-<images/github-mujoco.png, id=254, 1413.02907pt x 568.37344pt>
+<images/github-mujoco.png, id=255, 1413.02907pt x 568.37344pt>
 File: images/github-mujoco.png Graphic file (type png)
 <use images/github-mujoco.png>
-Package pdftex.def Info: images/github-mujoco.png  used on input line 161.
+Package pdftex.def Info: images/github-mujoco.png  used on input line 162.
 (pdftex.def)             Requested size: 212.2689pt x 85.38242pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -1322,11 +1322,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 161.
+Package pdftex.def Info: logo.png  used on input line 162.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 161.
+Package pdftex.def Info: logo.png  used on input line 162.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [6
 
@@ -1337,48 +1337,48 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 170.
+Package pdftex.def Info: logo.png  used on input line 171.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 170.
+Package pdftex.def Info: logo.png  used on input line 171.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [7
 
 ] (./tikz/compare.tex
-<./images//gg-mujoco-2015.png, id=327, 849.1725pt x 307.1475pt>
+<./images//gg-mujoco-2015.png, id=328, 849.1725pt x 307.1475pt>
 File: ./images//gg-mujoco-2015.png Graphic file (type png)
 <use ./images//gg-mujoco-2015.png>
 Package pdftex.def Info: ./images//gg-mujoco-2015.png  used on input line 9.
 (pdftex.def)             Requested size: 246.90158pt x 89.30014pt.
-<./images//gg-isaac-2015.png, id=328, 849.1725pt x 307.1475pt>
+<./images//gg-isaac-2015.png, id=329, 849.1725pt x 307.1475pt>
 File: ./images//gg-isaac-2015.png Graphic file (type png)
 <use ./images//gg-isaac-2015.png>
 Package pdftex.def Info: ./images//gg-isaac-2015.png  used on input line 11.
 (pdftex.def)             Requested size: 246.90158pt x 89.30014pt.
-<./images//gg-simscape-2015.png, id=329, 849.1725pt x 307.1475pt>
+<./images//gg-simscape-2015.png, id=330, 849.1725pt x 307.1475pt>
 File: ./images//gg-simscape-2015.png Graphic file (type png)
 <use ./images//gg-simscape-2015.png>
 Package pdftex.def Info: ./images//gg-simscape-2015.png  used on input line 13.
 
 (pdftex.def)             Requested size: 246.90158pt x 89.30014pt.
-<./images//gg-isaac.png, id=330, 849.1725pt x 307.1475pt>
+<./images//gg-isaac.png, id=331, 849.1725pt x 307.1475pt>
 File: ./images//gg-isaac.png Graphic file (type png)
 <use ./images//gg-isaac.png>
 Package pdftex.def Info: ./images//gg-isaac.png  used on input line 15.
 (pdftex.def)             Requested size: 246.90158pt x 89.30014pt.
-<./images//gg-mujoco.png, id=331, 849.1725pt x 307.1475pt>
+<./images//gg-mujoco.png, id=332, 849.1725pt x 307.1475pt>
 File: ./images//gg-mujoco.png Graphic file (type png)
 <use ./images//gg-mujoco.png>
 Package pdftex.def Info: ./images//gg-mujoco.png  used on input line 17.
 (pdftex.def)             Requested size: 246.90158pt x 89.30014pt.
-<./images//gg-simscape.png, id=332, 849.1725pt x 307.1475pt>
+<./images//gg-simscape.png, id=333, 849.1725pt x 307.1475pt>
 File: ./images//gg-simscape.png Graphic file (type png)
 <use ./images//gg-simscape.png>
 Package pdftex.def Info: ./images//gg-simscape.png  used on input line 19.
 (pdftex.def)             Requested size: 246.90158pt x 89.30014pt.
 )
-Overfull \hbox (15.37254pt too wide) in paragraph at lines 182--182
+Overfull \hbox (15.37254pt too wide) in paragraph at lines 183--183
 [][]  
  []
 
@@ -1389,43 +1389,43 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 182.
+Package pdftex.def Info: logo.png  used on input line 183.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 182.
+Package pdftex.def Info: logo.png  used on input line 183.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [8
 
  <./images//gg-mujoco-2015.png> <./images//gg-isaac-2015.png> <./images//gg-sim
 scape-2015.png> <./images//gg-isaac.png> <./images//gg-mujoco.png> <./images//g
 g-simscape.png>] (./tikz/mjc-resource.tex
-<./images//mjc-ex1.png, id=374, 851.18pt x 928.46875pt>
+<./images//mjc-ex1.png, id=375, 851.18pt x 928.46875pt>
 File: ./images//mjc-ex1.png Graphic file (type png)
 <use ./images//mjc-ex1.png>
 Package pdftex.def Info: ./images//mjc-ex1.png  used on input line 9.
 (pdftex.def)             Requested size: 120.82684pt x 131.79814pt.
-<./images//mjc-ex2.png, id=375, 851.18pt x 928.46875pt>
+<./images//mjc-ex2.png, id=376, 851.18pt x 928.46875pt>
 File: ./images//mjc-ex2.png Graphic file (type png)
 <use ./images//mjc-ex2.png>
 Package pdftex.def Info: ./images//mjc-ex2.png  used on input line 11.
 (pdftex.def)             Requested size: 120.82684pt x 131.79814pt.
-<./images//mjc-ex3.png, id=376, 851.18pt x 928.46875pt>
+<./images//mjc-ex3.png, id=377, 851.18pt x 928.46875pt>
 File: ./images//mjc-ex3.png Graphic file (type png)
 <use ./images//mjc-ex3.png>
 Package pdftex.def Info: ./images//mjc-ex3.png  used on input line 13.
 (pdftex.def)             Requested size: 120.82684pt x 131.79814pt.
-<./images//mjc-ex4.png, id=377, 851.18pt x 928.46875pt>
+<./images//mjc-ex4.png, id=378, 851.18pt x 928.46875pt>
 File: ./images//mjc-ex4.png Graphic file (type png)
 <use ./images//mjc-ex4.png>
 Package pdftex.def Info: ./images//mjc-ex4.png  used on input line 15.
 (pdftex.def)             Requested size: 120.82684pt x 131.79814pt.
-<./images//mjc-ex5.png, id=378, 851.18pt x 928.46875pt>
+<./images//mjc-ex5.png, id=379, 851.18pt x 928.46875pt>
 File: ./images//mjc-ex5.png Graphic file (type png)
 <use ./images//mjc-ex5.png>
 Package pdftex.def Info: ./images//mjc-ex5.png  used on input line 17.
 (pdftex.def)             Requested size: 120.82684pt x 131.79814pt.
-<./images//mjc-ex6.png, id=379, 851.18pt x 928.46875pt>
+<./images//mjc-ex6.png, id=380, 851.18pt x 928.46875pt>
 File: ./images//mjc-ex6.png Graphic file (type png)
 <use ./images//mjc-ex6.png>
 Package pdftex.def Info: ./images//mjc-ex6.png  used on input line 19.
@@ -1437,11 +1437,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 188.
+Package pdftex.def Info: logo.png  used on input line 189.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 188.
+Package pdftex.def Info: logo.png  used on input line 189.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [9
 
@@ -1465,19 +1465,19 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 213.
+Package pdftex.def Info: logo.png  used on input line 214.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 213.
+Package pdftex.def Info: logo.png  used on input line 214.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [10
 
 ]
-<images/gg-colab.png, id=456, 646.66594pt x 438.8897pt>
+<images/gg-colab.png, id=457, 646.66594pt x 438.8897pt>
 File: images/gg-colab.png Graphic file (type png)
 <use images/gg-colab.png>
-Package pdftex.def Info: images/gg-colab.png  used on input line 224.
+Package pdftex.def Info: images/gg-colab.png  used on input line 225.
 (pdftex.def)             Requested size: 212.2689pt x 144.0639pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -1486,19 +1486,19 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 224.
+Package pdftex.def Info: logo.png  used on input line 225.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 224.
+Package pdftex.def Info: logo.png  used on input line 225.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [11
 
  <./images/gg-colab.png>]
-<images/gg-mjc-overview.png, id=493, 1112.65688pt x 679.78969pt>
+<images/gg-mjc-overview.png, id=494, 1112.65688pt x 679.78969pt>
 File: images/gg-mjc-overview.png Graphic file (type png)
 <use images/gg-mjc-overview.png>
-Package pdftex.def Info: images/gg-mjc-overview.png  used on input line 234.
+Package pdftex.def Info: images/gg-mjc-overview.png  used on input line 235.
 (pdftex.def)             Requested size: 242.59502pt x 148.21611pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -1507,11 +1507,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 234.
+Package pdftex.def Info: logo.png  used on input line 235.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 234.
+Package pdftex.def Info: logo.png  used on input line 235.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [12
 
@@ -1522,11 +1522,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 241.
+Package pdftex.def Info: logo.png  used on input line 242.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 241.
+Package pdftex.def Info: logo.png  used on input line 242.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [13
 
@@ -1537,11 +1537,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 253.
+Package pdftex.def Info: logo.png  used on input line 254.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 253.
+Package pdftex.def Info: logo.png  used on input line 254.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [14
 
@@ -1560,36 +1560,36 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 263.
+Package pdftex.def Info: logo.png  used on input line 264.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 263.
+Package pdftex.def Info: logo.png  used on input line 264.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [15
 
 ] (./tikz/mujoco-approach.tex
-<./images//vscode-xml.png, id=640, 910.90312pt x 646.66594pt>
+<./images//vscode-xml.png, id=641, 910.90312pt x 646.66594pt>
 File: ./images//vscode-xml.png Graphic file (type png)
 <use ./images//vscode-xml.png>
 Package pdftex.def Info: ./images//vscode-xml.png  used on input line 9.
 (pdftex.def)             Requested size: 113.39003pt x 74.87318pt.
-<./images//gg-xml.png, id=641, 192.72pt x 192.72pt>
+<./images//gg-xml.png, id=642, 192.72pt x 192.72pt>
 File: ./images//gg-xml.png Graphic file (type png)
 <use ./images//gg-xml.png>
 Package pdftex.def Info: ./images//gg-xml.png  used on input line 11.
 (pdftex.def)             Requested size: 18.90848pt x 17.58812pt.
-<./images//real-stewart.png, id=642, 1457.445pt x 1935.23pt>
+<./images//real-stewart.png, id=643, 1457.445pt x 1935.23pt>
 File: ./images//real-stewart.png Graphic file (type png)
 <use ./images//real-stewart.png>
 Package pdftex.def Info: ./images//real-stewart.png  used on input line 16.
 (pdftex.def)             Requested size: 95.38217pt x 126.14871pt.
-<./images//mujoco-stewart.png, id=643, 1918.16624pt x 1051.93pt>
+<./images//mujoco-stewart.png, id=644, 1918.16624pt x 1051.93pt>
 File: ./images//mujoco-stewart.png Graphic file (type png)
 <use ./images//mujoco-stewart.png>
 Package pdftex.def Info: ./images//mujoco-stewart.png  used on input line 21.
 (pdftex.def)             Requested size: 186.1497pt x 102.08524pt.
-<./images//sw-stewart.jpg, id=644, 1922.18124pt x 1045.9075pt>
+<./images//sw-stewart.jpg, id=645, 1922.18124pt x 1045.9075pt>
 File: ./images//sw-stewart.jpg Graphic file (type jpg)
 <use ./images//sw-stewart.jpg>
 Package pdftex.def Info: ./images//sw-stewart.jpg  used on input line 30.
@@ -1601,11 +1601,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 272.
+Package pdftex.def Info: logo.png  used on input line 273.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 272.
+Package pdftex.def Info: logo.png  used on input line 273.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [16
 
@@ -1618,19 +1618,19 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 278.
+Package pdftex.def Info: logo.png  used on input line 279.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 278.
+Package pdftex.def Info: logo.png  used on input line 279.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [17
 
 ]
-<images/mjc-7dof.png, id=725, 1445.4pt x 813.0375pt>
+<images/mjc-7dof.png, id=726, 1445.4pt x 813.0375pt>
 File: images/mjc-7dof.png Graphic file (type png)
 <use images/mjc-7dof.png>
-Package pdftex.def Info: images/mjc-7dof.png  used on input line 290.
+Package pdftex.def Info: images/mjc-7dof.png  used on input line 291.
 (pdftex.def)             Requested size: 272.9165pt x 153.51106pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -1639,11 +1639,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 290.
+Package pdftex.def Info: logo.png  used on input line 291.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 290.
+Package pdftex.def Info: logo.png  used on input line 291.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [18
 
@@ -1656,7 +1656,7 @@ Package pdftex.def Info: logo.png  used on input line 290.
 
 (./_minted-seminar-mujoco-dcvu/248269007E5889C0D293E7CC684475ED462FA7A3BBBC4C55
 41579C805B735225.pygtex))
-Overfull \vbox (3.97491pt too high) detected at line 324
+Overfull \vbox (3.97491pt too high) detected at line 325
  []
 
 
@@ -1666,11 +1666,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 324.
+Package pdftex.def Info: logo.png  used on input line 325.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 324.
+Package pdftex.def Info: logo.png  used on input line 325.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [19
 
@@ -1683,7 +1683,7 @@ Package pdftex.def Info: logo.png  used on input line 324.
 
 (./_minted-seminar-mujoco-dcvu/C5EC68C8D76DC07DD9980AB50E044896C959385264F7C4F8
 A73854EF08AA8F7B.pygtex) (./tikz/7dof.tex
-<./images//robot7dof.png, id=798, 656.4525pt x 605.26125pt>
+<./images//robot7dof.png, id=799, 656.4525pt x 605.26125pt>
 File: ./images//robot7dof.png Graphic file (type png)
 <use ./images//robot7dof.png>
 Package pdftex.def Info: ./images//robot7dof.png  used on input line 10.
@@ -1700,11 +1700,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 346.
+Package pdftex.def Info: logo.png  used on input line 347.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 346.
+Package pdftex.def Info: logo.png  used on input line 347.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [20
 
@@ -1723,18 +1723,18 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 370.
+Package pdftex.def Info: logo.png  used on input line 371.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 370.
+Package pdftex.def Info: logo.png  used on input line 371.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [21
 
 ]
 File: ./images//mujoco-stewart.png Graphic file (type png)
 <use ./images//mujoco-stewart.png>
-Package pdftex.def Info: ./images//mujoco-stewart.png  used on input line 384.
+Package pdftex.def Info: ./images//mujoco-stewart.png  used on input line 385.
 (pdftex.def)             Requested size: 272.9165pt x 149.66081pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -1743,11 +1743,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 384.
+Package pdftex.def Info: logo.png  used on input line 385.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 384.
+Package pdftex.def Info: logo.png  used on input line 385.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [22
 
@@ -1755,13 +1755,13 @@ Package pdftex.def Info: logo.png  used on input line 384.
 \openout4 = `seminar-mujoco-dcvu.vrb'.
 
  (./seminar-mujoco-dcvu.vrb (./tikz/parallel-mechanisms.tex
-<./images//simscape-close-loop.png, id=902, 665.48625pt x 470.75874pt>
+<./images//simscape-close-loop.png, id=903, 665.48625pt x 470.75874pt>
 File: ./images//simscape-close-loop.png Graphic file (type png)
 <use ./images//simscape-close-loop.png>
 Package pdftex.def Info: ./images//simscape-close-loop.png  used on input line 
 22.
 (pdftex.def)             Requested size: 218.27074pt x 154.40987pt.
-<./images//simscape-ex-closedloop.png, id=903, 339.2675pt x 158.5925pt>
+<./images//simscape-ex-closedloop.png, id=904, 339.2675pt x 158.5925pt>
 File: ./images//simscape-ex-closedloop.png Graphic file (type png)
 <use ./images//simscape-ex-closedloop.png>
 Package pdftex.def Info: ./images//simscape-ex-closedloop.png  used on input li
@@ -1779,11 +1779,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 403.
+Package pdftex.def Info: logo.png  used on input line 404.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 403.
+Package pdftex.def Info: logo.png  used on input line 404.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [23
 
@@ -1791,13 +1791,13 @@ Package pdftex.def Info: logo.png  used on input line 403.
 \openout4 = `seminar-mujoco-dcvu.vrb'.
 
 (./seminar-mujoco-dcvu.vrb
-<images/vscode-fk-stewart.png, id=941, 922.19531pt x 597.73312pt>
+<images/vscode-fk-stewart.png, id=942, 922.19531pt x 597.73312pt>
 File: images/vscode-fk-stewart.png Graphic file (type png)
 <use images/vscode-fk-stewart.png>
 Package pdftex.def Info: images/vscode-fk-stewart.png  used on input line 4.
 (pdftex.def)             Requested size: 303.24263pt x 196.55025pt.
 )
-Overfull \vbox (5.88422pt too high) detected at line 413
+Overfull \vbox (5.88422pt too high) detected at line 414
  []
 
 
@@ -1807,11 +1807,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 413.
+Package pdftex.def Info: logo.png  used on input line 414.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 413.
+Package pdftex.def Info: logo.png  used on input line 414.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [24
 
@@ -1830,11 +1830,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 438.
+Package pdftex.def Info: logo.png  used on input line 439.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 438.
+Package pdftex.def Info: logo.png  used on input line 439.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [25
 
@@ -1847,7 +1847,7 @@ Package pdftex.def Info: logo.png  used on input line 438.
 
 (./_minted-seminar-mujoco-dcvu/D30783B7949831C8E81F9C47CE33205AC959385264F7C4F8
 A73854EF08AA8F7B.pygtex) (./tikz/joystick.tex
-<./images//joystick.jpg, id=1013, 1935.23pt x 2569.6pt>
+<./images//joystick.jpg, id=1014, 1935.23pt x 2569.6pt>
 File: ./images//joystick.jpg Graphic file (type jpg)
 <use ./images//joystick.jpg>
 Package pdftex.def Info: ./images//joystick.jpg  used on input line 10.
@@ -1863,11 +1863,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 459.
+Package pdftex.def Info: logo.png  used on input line 460.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 459.
+Package pdftex.def Info: logo.png  used on input line 460.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [26
 
@@ -1875,7 +1875,7 @@ Package pdftex.def Info: logo.png  used on input line 459.
 \openout4 = `seminar-mujoco-dcvu.vrb'.
 
  (./seminar-mujoco-dcvu.vrb
-<images/real-joystick-ctrl.png, id=1049, 1431.09656pt x 813.0375pt>
+<images/real-joystick-ctrl.png, id=1050, 1431.09656pt x 813.0375pt>
 File: images/real-joystick-ctrl.png Graphic file (type png)
 <use images/real-joystick-ctrl.png>
 Package pdftex.def Info: images/real-joystick-ctrl.png  used on input line 6.
@@ -1887,11 +1887,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 470.
+Package pdftex.def Info: logo.png  used on input line 471.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 470.
+Package pdftex.def Info: logo.png  used on input line 471.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [27
 
@@ -1899,7 +1899,7 @@ Package pdftex.def Info: logo.png  used on input line 470.
 \openout4 = `seminar-mujoco-dcvu.vrb'.
 
  (./seminar-mujoco-dcvu.vrb
-<images/mjc-x2.png, id=1084, 3854.4pt x 2168.1pt>
+<images/mjc-x2.png, id=1085, 3854.4pt x 2168.1pt>
 File: images/mjc-x2.png Graphic file (type png)
 <use images/mjc-x2.png>
 Package pdftex.def Info: images/mjc-x2.png  used on input line 4.
@@ -1911,11 +1911,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 480.
+Package pdftex.def Info: logo.png  used on input line 481.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 480.
+Package pdftex.def Info: logo.png  used on input line 481.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [28
 
@@ -1934,11 +1934,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 501.
+Package pdftex.def Info: logo.png  used on input line 502.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 501.
+Package pdftex.def Info: logo.png  used on input line 502.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [29
 
@@ -1946,7 +1946,7 @@ Package pdftex.def Info: logo.png  used on input line 501.
 \openout4 = `seminar-mujoco-dcvu.vrb'.
 
  (./seminar-mujoco-dcvu.vrb
-<images/mjc-uav.png, id=1154, 1780.6525pt x 937.5025pt>
+<images/mjc-uav.png, id=1155, 1780.6525pt x 937.5025pt>
 File: images/mjc-uav.png Graphic file (type png)
 <use images/mjc-uav.png>
 Package pdftex.def Info: images/mjc-uav.png  used on input line 6.
@@ -1958,11 +1958,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 511.
+Package pdftex.def Info: logo.png  used on input line 512.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 511.
+Package pdftex.def Info: logo.png  used on input line 512.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [30
 
@@ -1970,7 +1970,7 @@ Package pdftex.def Info: logo.png  used on input line 511.
 \openout4 = `seminar-mujoco-dcvu.vrb'.
 
  (./seminar-mujoco-dcvu.vrb
-<images/mjc-odin.png, id=1189, 1400.23125pt x 850.17625pt>
+<images/mjc-odin.png, id=1190, 1400.23125pt x 850.17625pt>
 File: images/mjc-odin.png Graphic file (type png)
 <use images/mjc-odin.png>
 Package pdftex.def Info: images/mjc-odin.png  used on input line 5.
@@ -1982,11 +1982,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 529.
+Package pdftex.def Info: logo.png  used on input line 530.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 529.
+Package pdftex.def Info: logo.png  used on input line 530.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [31
 
@@ -2010,11 +2010,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 560.
+Package pdftex.def Info: logo.png  used on input line 561.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 560.
+Package pdftex.def Info: logo.png  used on input line 561.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [32
 
@@ -2033,11 +2033,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 587.
+Package pdftex.def Info: logo.png  used on input line 588.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 587.
+Package pdftex.def Info: logo.png  used on input line 588.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [33
 
@@ -2056,24 +2056,24 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 619.
+Package pdftex.def Info: logo.png  used on input line 620.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 619.
+Package pdftex.def Info: logo.png  used on input line 620.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [34
 
 ]
-<images/mjc-odin1m.png, id=1329, 983.675pt x 395.4775pt>
+<images/mjc-odin1m.png, id=1330, 983.675pt x 395.4775pt>
 File: images/mjc-odin1m.png Graphic file (type png)
 <use images/mjc-odin1m.png>
-Package pdftex.def Info: images/mjc-odin1m.png  used on input line 627.
+Package pdftex.def Info: images/mjc-odin1m.png  used on input line 628.
 (pdftex.def)             Requested size: 272.9165pt x 109.72517pt.
-<images/mjc-odin3.png, id=1330, 1104.125pt x 339.2675pt>
+<images/mjc-odin3.png, id=1331, 1104.125pt x 339.2675pt>
 File: images/mjc-odin3.png Graphic file (type png)
 <use images/mjc-odin3.png>
-Package pdftex.def Info: images/mjc-odin3.png  used on input line 627.
+Package pdftex.def Info: images/mjc-odin3.png  used on input line 628.
 (pdftex.def)             Requested size: 272.9165pt x 83.85895pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -2082,19 +2082,19 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 627.
+Package pdftex.def Info: logo.png  used on input line 628.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 627.
+Package pdftex.def Info: logo.png  used on input line 628.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [35
 
  <./images/mjc-odin1m.png> <./images/mjc-odin3.png>]
-<images/mjc-odin2.png, id=1368, 909.3975pt x 523.9575pt>
+<images/mjc-odin2.png, id=1369, 909.3975pt x 523.9575pt>
 File: images/mjc-odin2.png Graphic file (type png)
 <use images/mjc-odin2.png>
-Package pdftex.def Info: images/mjc-odin2.png  used on input line 634.
+Package pdftex.def Info: images/mjc-odin2.png  used on input line 635.
 (pdftex.def)             Requested size: 272.9165pt x 157.24442pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -2103,19 +2103,19 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 634.
+Package pdftex.def Info: logo.png  used on input line 635.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 634.
+Package pdftex.def Info: logo.png  used on input line 635.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [36
 
  <./images/mjc-odin2.png>]
-<images/mjc-odin4.png, id=1403, 896.34875pt x 639.38875pt>
+<images/mjc-odin4.png, id=1404, 896.34875pt x 639.38875pt>
 File: images/mjc-odin4.png Graphic file (type png)
 <use images/mjc-odin4.png>
-Package pdftex.def Info: images/mjc-odin4.png  used on input line 641.
+Package pdftex.def Info: images/mjc-odin4.png  used on input line 642.
 (pdftex.def)             Requested size: 272.9165pt x 194.67668pt.
 
 Overfull \hbox (2.71387pt too wide) has occurred while \output is active
@@ -2124,11 +2124,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 641.
+Package pdftex.def Info: logo.png  used on input line 642.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 641.
+Package pdftex.def Info: logo.png  used on input line 642.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [37
 
@@ -2139,11 +2139,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 646.
+Package pdftex.def Info: logo.png  used on input line 647.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 646.
+Package pdftex.def Info: logo.png  used on input line 647.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [38
 
@@ -2154,11 +2154,11 @@ Overfull \hbox (2.71387pt too wide) has occurred while \output is active
 
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 662.
+Package pdftex.def Info: logo.png  used on input line 663.
 (pdftex.def)             Requested size: 30.95874pt x 22.76228pt.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 662.
+Package pdftex.def Info: logo.png  used on input line 663.
 (pdftex.def)             Requested size: 182.09767pt x 133.88364pt.
 [39
 
@@ -2179,12 +2179,12 @@ runsystem(rm seminar-mujoco-dcvu.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 31961 strings out of 480247
- 654233 string characters out of 5896152
- 930145 words of memory out of 5000000
- 49032 multiletter control sequences out of 15000+600000
+ 31961 strings out of 479654
+ 654237 string characters out of 5883417
+ 931937 words of memory out of 5000000
+ 49191 multiletter control sequences out of 15000+600000
  477822 words of font info for 61 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
+ 309 hyphenation exceptions out of 8191
  99i,20n,104p,606b,913s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share
@@ -2196,10 +2196,10 @@ t/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts
 e1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmtt8.pfb>
-Output written on seminar-mujoco-dcvu.pdf (39 pages, 12838299 bytes).
+Output written on seminar-mujoco-dcvu.pdf (39 pages, 12838476 bytes).
 PDF statistics:
- 1582 PDF objects out of 1728 (max. 8388607)
- 1433 compressed objects within 15 object streams
+ 1583 PDF objects out of 1728 (max. 8388607)
+ 1434 compressed objects within 15 object streams
  87 named destinations out of 1000 (max. 500000)
  287 words of extra memory for PDF output out of 10000 (max. 10000000)
 
